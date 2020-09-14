@@ -1,0 +1,71 @@
+@fontColor: #3d3d3d;
+
+.todosContainer{
+    color: @fontColor;
+    font-weight: 500;
+    display: flex;
+    flex-flow: wrap;
+
+    input{
+        color: #cfcfcf;
+    }
+    button{
+        color: @fontColor;
+        font-weight: 500;
+        font-size: 1.2vw;
+    }
+
+    a{
+        font-weight: 300;
+        padding: 0;
+    }
+
+    & header{
+        justify-content: flex-end;
+        width: 100%;
+    
+        input{
+            margin: 0 0.5vw;
+        }
+    }
+  
+    .formCategory{
+      width: 100%;
+    }
+
+    .container{
+      margin-top: 2vw;
+      display: flex;
+      flex-flow: wrap;
+    }
+
+    .formTask{
+      position: absolute;
+      left: 55vw;
+      bottom: 70vh;
+      width: 40vw;
+    }
+
+    .categoryList{
+      width: 30vw;
+      height: 60vh;
+      overflow: auto;
+
+      li{
+        width: 100%;
+
+        .category{
+          display: flex;
+        }
+      }
+    }
+
+    .todoList{
+      width: 40vw;
+      height: 60vh;
+      overflow: auto;
+      color: #cfcfcf;
+      font-weight: 300;
+    }
+
+}

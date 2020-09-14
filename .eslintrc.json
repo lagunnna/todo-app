@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules":true,
+            "arrowFunctions":true,
+            "experimentalObjectRestSpread": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+        "import/prefer-default-export": 0,
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "arrow-body-style": ["error", "as-needed"],
+        "react/button-has-type": 0,
+        "react/prop-types": 0,
+        "import/named": 0,
+        "jsx-a11y/label-has-associated-control": 0
+    }
+}
