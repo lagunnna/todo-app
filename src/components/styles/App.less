@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300;500&display=swap');
+@background: #282828;
+@fontStyle: 'Roboto';
+
+*{
+    margin: 0;
+    bottom: 0;
+    border: none;
+    font-family: @fontStyle;
+}
+
+body,
+.app{
+    width: 100vw;  
+    height: 100vh;
+}
+
+.app{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    background: @background;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+button,
+input{
+    background-color: transparent;
+}
+
+input{
+    border-bottom: 0.1vw solid #3d3d3d;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7%;
+
+    .logo{
+        font-family: 'Fredoka One';
+        font-size: 1.7vw;
+        line-height: 1.7vw;
+        margin-left: 4%;
+        
+        color: #FFFFFF;
+
+    }
+    
+    .btns-sign{
+        display: flex;
+        width: 20%;
+
+        .btn-signIn,
+        .btn-signUp{
+            font-size: 1.3vw;
+            width: 50%;
+            font-family: @fontStyle;
+            color: #CFCFCF;
+            margin-right: 3%;
+        }
+
+        .btn-signIn{
+            border: 0.2vw solid #3d3d3d;
+            border-radius: 50px;
+        }
+    }
+}
+
+nav{
+    top: 17%;
+    width: 17%;
+
+    ul{
+        margin-top: 30%;
+        padding: 0;
+    }
+
+    & a{  
+        font-style: @fontStyle;
+        font-size: 1.5vw;
+        line-height: 1.65vw;
+        margin-top: 1vw;
+        font-weight: 500;
+        padding-left: 20%;
+    
+        color: #CFCFCF;
+    }
+
+    a:hover{
+        text-decoration-line: underline;
+    }
+
+}
+
+content{
+    color: #3d3d3d;
+    background: #2d2d2d;
+    border-radius: 50px 0px 0px 50px;
+    width: 83%;
+    height: 92%;
+    padding: 2%;
+    padding-left: 4%;
+    box-sizing: border-box;
+    
+    -webkit-box-shadow: 0 0 2vw #212121;
+    -moz-box-shadow: 0 0 2vw #212121;
+    box-shadow: 0 0 2vw #212121;
+        
+}
+
+footer{
+    position: absolute;
+    font-weight: 300;
+    bottom: 0;
+    width: 100%;
+    color: hsla(0, 0%, 81%, 0.2);
+}
